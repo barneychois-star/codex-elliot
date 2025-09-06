@@ -17,7 +17,7 @@ impl WidgetRef for &WelcomeWidget {
     fn render_ref(&self, area: Rect, buf: &mut Buffer) {
         let line = Line::from(vec![
             ">_ ".into(),
-            "Welcome to Codex, OpenAI's command-line coding agent".bold(),
+            "Welcome to SavantAI, The Terminal Company's command-line coding agent".bold(),
         ]);
         line.render(area, buf);
     }

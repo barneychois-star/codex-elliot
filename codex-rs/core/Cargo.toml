@@ -1,10 +1,10 @@
 [package]
 edition = "2024"
-name = "codex-core"
+name = "savantai-core"
 version = { workspace = true }
 
 [lib]
-name = "codex_core"
+name = "savantai_core"
 path = "src/lib.rs"
 doctest = false
 
@@ -17,9 +17,9 @@ async-channel = "2.3.1"
 base64 = "0.22"
 bytes = "1.10.1"
 chrono = { version = "0.4", features = ["serde"] }
-codex-apply-patch = { path = "../apply-patch" }
-codex-mcp-client = { path = "../mcp-client" }
-codex-protocol = { path = "../protocol" }
+savantai-apply-patch = { path = "../apply-patch" }
+savantai-mcp-client = { path = "../mcp-client" }
+savantai-protocol = { path = "../protocol" }
 dirs = "6"
 env-flags = "0.1.1"
 eventsource-stream = "0.2.3"

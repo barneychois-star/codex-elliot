@@ -1,14 +1,14 @@
 [package]
 edition = "2024"
-name = "codex-tui"
+name = "savantai-tui"
 version = { workspace = true }
 
 [[bin]]
-name = "codex-tui"
+name = "savantai-tui"
 path = "src/main.rs"
 
 [lib]
-name = "codex_tui"
+name = "savantai_tui"
 path = "src/lib.rs"
 
 [features]
@@ -26,18 +26,18 @@ async-stream = "0.3.6"
 base64 = "0.22.1"
 chrono = { version = "0.4", features = ["serde"] }
 clap = { version = "4", features = ["derive"] }
-codex-ansi-escape = { path = "../ansi-escape" }
-codex-arg0 = { path = "../arg0" }
-codex-common = { path = "../common", features = [
+savantai-ansi-escape = { path = "../ansi-escape" }
+savantai-arg0 = { path = "../arg0" }
+savantai-common = { path = "../common", features = [
     "cli",
     "elapsed",
     "sandbox_summary",
 ] }
-codex-core = { path = "../core" }
-codex-file-search = { path = "../file-search" }
-codex-login = { path = "../login" }
-codex-ollama = { path = "../ollama" }
-codex-protocol = { path = "../protocol" }
+savantai-core = { path = "../core" }
+savantai-file-search = { path = "../file-search" }
+savantai-login = { path = "../login" }
+savantai-ollama = { path = "../ollama" }
+savantai-protocol = { path = "../protocol" }
 color-eyre = "0.6.3"
 crossterm = { version = "0.28.1", features = [
     "bracketed-paste",

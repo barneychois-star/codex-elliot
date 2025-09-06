@@ -1,14 +1,14 @@
 [package]
 edition = "2024"
-name = "codex-cli"
+name = "savantai-cli"
 version = { workspace = true }
 
 [[bin]]
-name = "codex"
+name = "savantai"
 path = "src/main.rs"
 
 [lib]
-name = "codex_cli"
+name = "savantai_cli"
 path = "src/lib.rs"
 
 [lints]
@@ -18,15 +18,15 @@ workspace = true
 anyhow = "1"
 clap = { version = "4", features = ["derive"] }
 clap_complete = "4"
-codex-arg0 = { path = "../arg0" }
-codex-chatgpt = { path = "../chatgpt" }
-codex-common = { path = "../common", features = ["cli"] }
-codex-core = { path = "../core" }
-codex-exec = { path = "../exec" }
-codex-login = { path = "../login" }
-codex-mcp-server = { path = "../mcp-server" }
-codex-protocol = { path = "../protocol" }
-codex-tui = { path = "../tui" }
+savantai-arg0 = { path = "../arg0" }
+savantai-chatgpt = { path = "../chatgpt" }
+savantai-common = { path = "../common", features = ["cli"] }
+savantai-core = { path = "../core" }
+savantai-exec = { path = "../exec" }
+savantai-login = { path = "../login" }
+savantai-mcp-server = { path = "../mcp-server" }
+savantai-protocol = { path = "../protocol" }
+savantai-tui = { path = "../tui" }
 serde_json = "1"
 tokio = { version = "1", features = [
     "io-std",
@@ -37,4 +37,4 @@ tokio = { version = "1", features = [
 ] }
 tracing = "0.1.41"
 tracing-subscriber = "0.3.19"
-codex-protocol-ts = { path = "../protocol-ts" }
+savantai-protocol-ts = { path = "../protocol-ts" }
